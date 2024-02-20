@@ -38,4 +38,13 @@
         ],
 
     ];
+
+
+    foreach($hotels as $hotel){
+        echo $hotel['name']; 
+         echo $hotel['description']; 
+        echo $hotel['parking'];
+        echo  $hotel['vote'];
+         echo  $hotel['distance_to_center'];
+    }
 ?>
