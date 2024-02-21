@@ -65,7 +65,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -122,11 +122,11 @@
                             $park=$hotel['parking']? 'si':'no';
                         ?>
                         <tr>
-                            <td><?php echo $hotel['name']; ?></td>
+                            <th scope="col"><?php echo $hotel['name']; ?></th>
                             <td><?php echo $hotel['description']; ?></td>
                             <td><?php echo $park; ?></td>
-                            <td><?php echo $hotel['vote']; ?></td>
-                            <td><?php echo $hotel['distance_to_center']; ?></td>
+                            <td><?php echo $hotel['vote']; ?>/5</td>
+                            <td><?php echo $hotel['distance_to_center']; ?> Km</td>
                         </tr>
                         <?php } ?>
                     </tbody>
